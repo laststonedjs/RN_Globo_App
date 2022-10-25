@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "globo",
+    "slug": "globo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "globo"
+}
