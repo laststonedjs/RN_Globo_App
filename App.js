@@ -1,21 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Home } from './app/views/Home';
+import { Contact } from './app/views/Contact';
+import { StackNavigator } from 'react-navigation';
+
+import { Video } from './app/views/Video';
+import { VideoDetail } from './app/views/VideoDetail';
+
+const MyRoutes = StackNavigator({
+  HomeRT: {
+    screen: Home
+  },
+  ContactRT: {
+    screen: Contact
+  },
+  LessonsRT: {
+    screen: Video
+  },
+  VideoDetailRT: {
+    screen: VideoDetail
+  }
+},
+  {
+    initialRouteName: 'HomeRT'
+  }
+);
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   <MyRoutes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
