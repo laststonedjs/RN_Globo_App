@@ -77,7 +77,7 @@ export class Login extends React.Component {
           onChangeText={(text) => this.setState({ username: text })}
           value={this.state.username}
         />
-        <Text style={styles.label}>Enter Username</Text>
+        <Text style={styles.labels}>Enter Username</Text>
 
         <TextInput 
           style={styles.inputs}
@@ -85,7 +85,7 @@ export class Login extends React.Component {
           value={this.state.password}
           secureTextEntry={true}
         />
-        <Text style={styles.label}>Enter password</Text>
+        <Text style={styles.labels}>Enter password</Text>
 
         <TouchableHighlight onPress={this.loginUser} underlayColor='#31e981'>
           <Text style={styles.buttons}>
