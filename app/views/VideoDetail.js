@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export class VideoDetail extends React.Component {
+  
   static navigationOptions = {
     header: null
   };
